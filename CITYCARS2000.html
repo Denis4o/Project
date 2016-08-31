@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Cars 2000</title>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/Site-JS.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <link rel="stylesheet" type="text/css" href="styles/create-post.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/posts.css" />
+
+</head>
+<body>
+<div id="background">
+    <div id="page">
+        <div id="header">
+            <div id="logo">
+                <a><img src="images/Logo.png" alt="LOGO" height="150" width="860"></a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li id="linkHome">
+                    <a href="#">Home</a>
+                </li>
+                <li id="linkLogin">
+                    <a href="#">Login</a>
+                </li>
+                <li id="linkRegister">
+                    <a href="#">Register</a>
+                </li>
+                <li id="linkCars">
+                    <a href="#">Cars</a>
+                </li>
+                <li id="linkParts">
+                    <a href="#">Parts</a>
+                </li>
+                <li id="linkTires">
+                    <a href="#">Tires</a>
+                </li>
+                <li id="linkListPosts">
+                    <a href="#">Forum</a>
+                </li>
+                <li id="linkCreatePost">
+                    <a href="#">Create Post</a>
+                </li>
+                <li id="linkContact">
+                    <a href="#">Contact</a>
+                </li >
+                <li id="linkLogout">
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <main id="contents">
+                    <section id="loadingBox">Loading... Please wait!</section>
+                    <section id="infoBox" onclick="$(this).fadeOut()">Info</section>
+                    <section id="errorBox" onclick="$(this).fadeOut()">Error</section>
+                <div class="main-background">
+                    <section id="viewHome">
+                        <div class="main">
+                            <div class="box">
+                                <div>
+                                    <div>
+                                        <h3>Автокъща "CITYCARS2000"</h3>
+                                        <ul>
+                                            <li>
+                                                <h4><a>Какво предлагаме ние?</a></h4>
+                                                <span>31.08.2016 г.</span>
+                                                <p>
+                                                   Ние предлагаме среден клас автомобили, които са внос от Австрия, Германия и Италия.
+                                                    Нашите автомобила са с доказан пройзход и на реални километри.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h4><a>Какво друго получавете при закупуване на автомобил?</a></h4>
+                                                <span>30.08.2016 г.</span>
+                                                <p>
+                                                    При закупуване на един от нашите автомобили, вие можете да използвате нашите отстъпки при регистрация, застраховка и обслужване.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="testimonials" class="box">
+                                <div>
+                                    <div>
+                                        <h3>За повече информация</h3>
+                                        <p>
+                                            “In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis. Aenean quis elit mauris, nec vestibulum lorem.” <span>- <a href="http://www.mobile.bg/pcgi/mobile.cgi?act=6&subact=1&actions=h13954112746965507&f1=0&f2=0&f3=1&f4=%C2%F1%E8%F7%EA%E8&f5=%C2%F1%E8%F7%EA%E8&f6=%C2%F1%E8%F7%EA%E8&f7=1&f8=city%20cars">mobile.bg</a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sidebar">
+                            <div class="section">
+                                <a id="carsLink"><img src="images/Cars.png" alt="Img" style="margin-top: 50px;"></a>
+                            </div>
+                            <div class="section">
+                                <a id="partsLink"><img src="images/Parts.png" alt="Img" style="margin-top: 50px;"></a>
+                            </div>
+                            <div class="section">
+                                <a id="tiresLink"><img src="images/Tiress.png" alt="Img" style="margin-top: 80px;"></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="viewLogin">
+                        <div class="body">
+                        <h1 class="Special-title">Please Login here</h1>
+                        <div class="user-login-block">
+                                <form class="user-register" id="formLogin">
+                                    <h1 class="form-title">Username:</h1>
+                                    <input type="text" value="" placeholder="Enter Username" id="loginUser" />
+                                    <h1 class="form-title">Password:</h1>
+                                    <input type="password" value="" placeholder="Enter password" id="loginPass" />
+                                    <br>
+                                    <button type="submit" id="Login">Login</button>
+                                </form>
+                        </div>
+                        </div>
+                        <a><img src="images/Logo2.png" alt="LOGO" height="150" width="815"
+                                style="padding: 25px 25px 25px 25px;"></a>
+                    </section>
+                    <section id="viewRegister">
+                        <div class="body">
+                            <h1 class="Special-title">Please register here</h1>
+                               <div class="user-login-block">
+                                        <form class="user-register" id="formRegister">
+                                            <h1 class="form-title">Username:</h1>
+                                            <input type="text" id="registerUser" required />
+                                            <h1 class="form-title">Full Name:</h1>
+                                            <input type="text" id="full-name" required />
+                                            <h1 class="form-title">Password:</h1>
+                                            <input type="password" id="registerPass" required />
+                                            <h1 class="form-title">Confirm Password:</h1>
+                                            <input type="password" id="pass-confirm" required />
+                                            <br>
+                                            <button type="submit" id="Register">Register</button>
+                                        </form>
+                                </div>
+                        </div>
+                        <a><img src="images/Logo2.png" alt="LOGO" height="150" width="815"
+                                style="padding: 25px 25px 25px 25px;"></a>
+                    </section>
+                    <section id="viewPosts">
+                        <h1 class="Special-title" style="margin: 20px 40px 40px 40px;" >Posts</h1>
+                        <div id="posts"/>
+                    </section>
+                    <section id="viewCreatePost">
+                        <div class="new-post-block">
+                            <h2 id="editor-title">new post</h2>
+                            <form id="formCreatePost">
+                                <ul class="title-author">
+                                    <li class="single-element-form">
+                                        <h1 class="title-form">Blog Post Title:</h1>
+                                        <input type="text" value="" placeholder="Title" id="postTitle"/>
+                                    </li>
+                                    <li class="single-element-form">
+                                        <h1 class="title-form">Author:</h1>
+                                        <input type="text" value="" placeholder="Author" id="postAuthor">
+                                    </li>
+                                </ul>
+                                <h1 class="title-form">Content:</h1>
+                                <textarea class="content-field" placeholder="Content" id="postDescription"></textarea>
+                                <br>
+                                <button type="submit">Publish</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section id="viewCars">
+                        <div class="body">
+                            <h1 class="Special-title">Second Hand Cars</h1>
+                            <ul id="cars">
+                                <li>
+                                    <a><img src="images/Audi-A4.jpg" alt="Img"></a>
+                                    <h2><a>Audi A4 2.0 TDI</a></h2>
+                                    <p style="height: 170px">
+                                        <b>Дата на производство: </b>Aприл 2014 г.<br>
+                                        <b>Тип двигател: </b>Дизелов<br>
+                                        <b>Мощност: </b>150 к.с.<br>
+                                        <b>Скоростна кутия: </b>Автоматик<br>
+                                        <b>Категори: </b>Седан<br>
+                                        <b>Пробег: </b>59 000 км.<br>
+                                    </p>
+                                    <a class="moreInfo"><span class="rate1">More Information</span></a>
+                                    <span class="rate2">Price: 46 000 лв.</span>
+                                </li>
+                                <li>
+                                    <a><img src="images/Audi-A4-B.png" alt="Img"></a>
+                                    <h2><a>Audi A4 2.0 TDI</a></h2>
+                                    <p style="height: 170px">
+                                        <b>Дата на производство: </b>Декември 2011 г.<br>
+                                        <b>Тип двигател: </b>Дизелов<br>
+                                        <b>Мощност: </b>143 к.с.<br>
+                                        <b>Скоростна кутия: </b>Ръчна<br>
+                                        <b>Категори: </b>Комби<br>
+                                        <b>Пробег: </b>183 000 км.<br>
+                                    </p>
+                                    <a class="moreInfo"><span class="rate1">More Information</span></a>
+                                    <span class="rate2">Price: 24 000 лв.</span>
+                                </li>
+                                <li>
+                                    <a><img src="images/Audi-A8-G.png" alt="Img"></a>
+                                    <h2><a>AUDI A8 3.0 TDI</a></h2>
+                                    <p style="height: 170px">
+                                        <b>Дата на производство: </b>Ноември 2006 г.<br>
+                                        <b>Тип двигател: </b>Дизелов<br>
+                                        <b>Мощност: </b>240 к.с.<br>
+                                        <b>Скоростна кутия: </b>Автоматична<br>
+                                        <b>Категори: </b>Седан<br>
+                                        <b>Пробег: </b>220 000 км.<br>
+                                    </p>
+                                    <a class="moreInfo"><span class="rate1">More Information</span></a>
+                                    <span class="rate2">Price: 14 400 лв.</span>
+                                </li>
+                                <li>
+                                    <a><img src="images/Mercedes-G.png" alt="Img"></a>
+                                    <h2><a>Mercedes E 200</a></h2>
+                                    <p style="height: 170px">
+                                        <b>Дата на производство: </b>Септември 2007 г.<br>
+                                        <b>Тип двигател: </b>Дизелов<br>
+                                        <b>Мощност: </b>136 к.с.<br>
+                                        <b>Скоростна кутия: </b>Автоматична<br>
+                                        <b>Категори: </b>Седан<br>
+                                        <b>Пробег: </b>173 000 км.<br>
+                                    </p>
+                                    <a class="moreInfo"><span class="rate1">More Information</span></a>
+                                    <span class="rate2">Price: 14 400 лв.</span>
+                                </li>
+                                <li>
+                                    <a><img src="images/Mercedes-B.png" alt="Img"></a>
+                                    <h2><a>Mercedes S 320 AMG</a></h2>
+                                    <p style="height: 170px">
+                                        <b>Дата на производство: </b>Юли 2008 г.<br>
+                                        <b>Тип двигател: </b>Дизелов<br>
+                                        <b>Мощност: </b>235 к.с.<br>
+                                        <b>Скоростна кутия: </b>Автоматична<br>
+                                        <b>Категори: </b>Седан<br>
+                                        <b>Пробег: </b>202 000 км.<br>
+                                    </p>
+                                    <a class="moreInfo"><span class="rate1">More Information</span></a>
+                                    <span class="rate2">Price: 28 400 лв.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="viewParts">
+                        <div class="body">
+                            <h1 class="Special-title">Parts</h1>
+                            <ul id="parts">
+                                <li>
+                                    <a><img src="images/door-A3.jpg" alt="Img"></a>
+                                    <h2><a>Врата за Audi A3</a></h2>
+                                    <p>
+                                        <b>Състояние: </b>Втора употреба<br>
+                                        <b>Марка: </b>Audi<br>
+                                        <b>Модел: </b>A3<br>
+                                        <b>Година: </b>2003-2012<br>
+                                        <b>Тегло: </b>13 кг.<br>
+                                        <b>Позиция: </b>Лява, предна<br>
+                                    </p>
+                                    <span class="price-bar">Price: 105.44 лв.</span>
+                                    <a class="moreInfo"><span class="price-bar">More Information</span></a>
+                                </li>
+                                <li>
+                                    <a><img src="images/light-X6.jpg" alt="Img"></a>
+                                    <h2><a>Външен стоп за BMW X6 </a></h2>
+                                    <p>
+                                        <b>Състояние: </b>Втора употреба<br>
+                                        <b>Марка: </b>BMW<br>
+                                        <b>Модел: </b>X6<br>
+                                        <b>Година: </b>2007-2012<br>
+                                        <b>Тегло: </b>1 кг.<br>
+                                        <b>Позиция: </b>Лява<br>
+                                    </p>
+                                    <span class="price-bar">Price: 181.80 лв.</span>
+                                    <a class="moreInfo"><span class="price-bar">More Information</span></a>
+                                </li>
+                                <li>
+                                    <a><img src="images/door-A3.jpg" alt="Img"></a>
+                                    <h2><a>Врата за Audi A3</a></h2>
+                                    <p>
+                                        <b>Състояние: </b>Втора употреба<br>
+                                        <b>Марка: </b>Audi<br>
+                                        <b>Модел: </b>A3<br>
+                                        <b>Година: </b>2003-2012<br>
+                                        <b>Тегло: </b>13 кг.<br>
+                                        <b>Позиция: </b>Лява, предна<br>
+                                    </p>
+                                    <span class="price-bar">Price: 105.44 лв.</span>
+                                    <a class="moreInfo"><span class="price-bar">More Information</span></a>
+                                </li>
+                                <li>
+                                    <a><img src="images/light-X6.jpg" alt="Img"></a>
+                                    <h2><a>Външен стоп за BMW X6 </a></h2>
+                                    <p>
+                                        <b>Състояние: </b>Втора употреба<br>
+                                        <b>Марка: </b>BMW<br>
+                                        <b>Модел: </b>X6<br>
+                                        <b>Година: </b>2007-2012<br>
+                                        <b>Тегло: </b>1 кг.<br>
+                                        <b>Позиция: </b>Лява<br>
+                                    </p>
+                                    <span class="price-bar">Price: 181.80 лв.</span>
+                                    <a class="moreInfo"><span class="price-bar">More Information</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="viewTires">
+                        <div class="body">
+                            <h1 class="Special-title">Tires</h1>
+                            <ul id="Tires">
+                                <li>
+                                    <h2><a>Гуми с джанти за Honda Cr-v</a></h2>
+                                    <div>
+                                        <a><img src="images/tires-honda.jpg" alt="Img" height="169" width="780" style="margin-bottom: 20px"><span class="cover"></span></a>
+                                        <p class="text" style="padding-top: 24px; padding-right: 20px;" >
+                                            <b>Състояние: </b>Втора употреба<br>
+                                            <b>Марка джанти: </b>Honda<br>
+                                            <b>Ширина в мм: </b>245<br>
+                                            <b>Височина: </b>45<br>
+                                            <b>Диаметър в инчa: </b>19<br>
+                                        </p>
+                                        <a><span class="info-bar"> More Information</span></a>
+                                        <span class="info-bar" style="float:none">Price: 46 000 лв.</span>
+                                        <p class="text" style="padding-top: 24px; margin-left: 20px; padding-right: 20px;">
+                                            <b>Ширина в инча: </b>7.5<br>
+                                            <b>Сезонност: </b>Летни<br>
+                                            <b>Материал: </b>Алуминиеви<br>
+                                            <b>Болтове: </b>5<br>
+                                            <b>Брой: </b>4<br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2><a>Гуми с джанти за Honda Cr-v</a></h2>
+                                    <div>
+                                        <a><img src="images/tires-honda.jpg" alt="Img" height="169" width="780" style="margin-bottom: 20px"><span class="cover"></span></a>
+                                        <p class="text" style="padding-top: 24px; padding-right: 20px;" >
+                                            <b>Състояние: </b>Втора употреба<br>
+                                            <b>Марка джанти: </b>Honda<br>
+                                            <b>Ширина в мм: </b>245<br>
+                                            <b>Височина: </b>45<br>
+                                            <b>Диаметър в инчa: </b>19<br>
+                                        </p>
+                                        <a><span class="info-bar"> More Information</span></a>
+                                        <span class="info-bar" style="float:none">Price: 46 000 лв.</span>
+                                        <p class="text" style="padding-top: 24px; margin-left: 20px; padding-right: 20px;">
+                                            <b>Ширина в инча: </b>7.5<br>
+                                            <b>Сезонност: </b>Летни<br>
+                                            <b>Материал: </b>Алуминиеви<br>
+                                            <b>Болтове: </b>5<br>
+                                            <b>Брой: </b>4<br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2><a>Гуми с джанти за Honda Cr-v</a></h2>
+                                    <div>
+                                        <a><img src="images/tires-honda.jpg" alt="Img" height="169" width="780" style="margin-bottom: 20px"><span class="cover"></span></a>
+                                        <p class="text" style="padding-top: 24px; padding-right: 20px;" >
+                                            <b>Състояние: </b>Втора употреба<br>
+                                            <b>Марка джанти: </b>Honda<br>
+                                            <b>Ширина в мм: </b>245<br>
+                                            <b>Височина: </b>45<br>
+                                            <b>Диаметър в инчa: </b>19<br>
+                                        </p>
+                                        <a><span class="info-bar"> More Information</span></a>
+                                        <span class="info-bar" style="float:none">Price: 46 000 лв.</span>
+                                        <p class="text" style="padding-top: 24px; margin-left: 20px; padding-right: 20px;">
+                                            <b>Ширина в инча: </b>7.5<br>
+                                            <b>Сезонност: </b>Летни<br>
+                                            <b>Материал: </b>Алуминиеви<br>
+                                            <b>Болтове: </b>5<br>
+                                            <b>Брой: </b>4<br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2><a>Гуми с джанти за Honda Cr-v</a></h2>
+                                    <div>
+                                        <a><img src="images/tires-honda.jpg" alt="Img" height="169" width="780" style="margin-bottom: 20px"><span class="cover"></span></a>
+                                        <p class="text" style="padding-top: 24px; padding-right: 20px;" >
+                                            <b>Състояние: </b>Втора употреба<br>
+                                            <b>Марка джанти: </b>Honda<br>
+                                            <b>Ширина в мм: </b>245<br>
+                                            <b>Височина: </b>45<br>
+                                            <b>Диаметър в инчa: </b>19<br>
+                                        </p>
+                                        <a><span class="info-bar"> More Information</span></a>
+                                        <span class="info-bar" style="float:none">Price: 46 000 лв.</span>
+                                        <p class="text" style="padding-top: 24px; margin-left: 20px; padding-right: 20px;">
+                                            <b>Ширина в инча: </b>7.5<br>
+                                            <b>Сезонност: </b>Летни<br>
+                                            <b>Материал: </b>Алуминиеви<br>
+                                            <b>Болтове: </b>5<br>
+                                            <b>Брой: </b>4<br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2><a>Гуми с джанти за Honda Cr-v</a></h2>
+                                    <div>
+                                        <a><img src="images/tires-honda.jpg" alt="Img" height="169" width="780" style="margin-bottom: 20px"><span class="cover"></span></a>
+                                        <p class="text" style="padding-top: 24px; padding-right: 20px;" >
+                                            <b>Състояние: </b>Втора употреба<br>
+                                            <b>Марка джанти: </b>Honda<br>
+                                            <b>Ширина в мм: </b>245<br>
+                                            <b>Височина: </b>45<br>
+                                            <b>Диаметър в инчa: </b>19<br>
+                                        </p>
+                                        <a><span class="info-bar"> More Information</span></a>
+                                        <span class="info-bar" style="float:none">Price: 46 000 лв.</span>
+                                        <p class="text" style="padding-top: 24px; margin-left: 20px; padding-right: 20px;">
+                                            <b>Ширина в инча: </b>7.5<br>
+                                            <b>Сезонност: </b>Летни<br>
+                                            <b>Материал: </b>Алуминиеви<br>
+                                            <b>Болтове: </b>5<br>
+                                            <b>Брой: </b>4<br>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="viewContact">
+                        <div class="body">
+                            <h1 class="Special-title">Contact</h1>
+                            <p class="contactUs" style="padding: 20px 20px 20px 20px;">
+                                <span>Address:</span> <span1 class="secondSpan"> Plovdivska 99A</span1>
+                            </p>
+                            <p class="contactUs" style="padding: 20px 20px 20px 20px;">
+                                <span>Telephone Number:</span><span1 class="secondSpan"> 0887 607 603</span1>
+                            </p>
+                            <p class="contactUs" style="padding: 20px 20px 20px 20px;">
+                                <span>E-Mail:</span><span1 class="secondSpan"> citycars2000@gmail.com</span1>
+                            </p>
+                        </div>
+                        <a><img src="images/Logo2.png" alt="LOGO" height="150" width="815"
+                                style="padding: 25px 25px 25px 25px;"></a>
+                    </section>
+                </div>
+            </main>
+
+    </div>
+    <div id="footer">
+        <div>
+            <ul class="navigation">
+                <li id="linkHomeF">
+                    <a href="#">Home</a>
+                </li>
+                <li id="linkLoginF">
+                    <a href="#">Login</a>
+                </li>
+                <li id="linkRegisterF">
+                    <a href="#">Register</a>
+                </li>
+                <li id="linkCarsF">
+                    <a href="#">Cars</a>
+                </li>
+                <li id="linkPartsF">
+                    <a href="#">Parts</a>
+                </li>
+                <li id="linkTiresF">
+                    <a href="#">Tires</a>
+                </li>
+                <li id="linkListPostsF">
+                    <a href="#">Forum</a>
+                </li>
+                <li id="linkCreatePostF">
+                    <a href="#">Create Post</a>
+                </li>
+                <li id="linkContactF">
+                    <a href="#">Contact</a>
+                </li >
+                <li id="linkLogoutF">
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+</div>
+</div>
+</body>
+</html>
