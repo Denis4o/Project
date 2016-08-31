@@ -1,0 +1,481 @@
+/*------------------------- Main - Background -------------------------*/
+#viewLogin, #viewRegister, #viewPosts, #viewCars, #viewParts, #viewTires, #viewContact{
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+/*------------------------------ Main ------------------------------*/
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+#background {
+    background: url(../images/BackGround.jpg) ;
+    min-height: 1318px;
+}
+#page {
+    width: 960px;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+/** Navigation **/
+#navigation {
+    background: url(../images/bg-navigation.png) no-repeat;
+    clear: both;
+    height: 50px;
+    width: 860px;
+    margin: 0 auto;
+    padding: 1px;
+}
+#navigation ul {
+    display: inline-block;
+    width: 860px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#navigation li {
+    display: none ;
+    float: left;
+    background-position: 0 -118px;
+    background-repeat: no-repeat;
+    height: 49px;
+    width: 104.64px;
+    margin: 0;
+    padding-left: 1px;
+    border-right: 2px solid #019c8c;
+    text-align: center;
+}
+#navigation li:first-child {
+    background: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+#navigation li a {
+    color: #fff;
+    display: block;
+    font: bold 14px/48px Arial, Helvetica, sans-serif;
+    height: 49px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#navigation li a:hover {
+    background-position: 0 -59px;
+    color: #6d6157;
+}
+#navigation li.selected a {
+    background-position: 0 0;
+    color: #e4e1bd;
+}
+/** Navigation End **/
+main > section{
+    display: none;
+    padding: 20px 5px;
+}
+section h1 {
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+table th{
+    background: #DDD;
+    padding: 10px;
+}
+table td {
+    padding: 5px 10px;
+    background: #EEE;
+}
+#infoBox, #errorBox, #loadingBox{
+    width: 90%;
+    height: 30px;
+    font-size: large;
+    margin: 5px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+#infoBox{
+    background: #019c8c;
+}
+#errorBox{
+    background: #ff573e;
+}
+#loadingBox{
+    background: #06c0ab;
+}
+footer{
+    background: #DDD;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}
+/** Login-Form **/
+.user-login-block {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 10% auto;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.form-title {
+    font: 18px Oswald;
+    font-weight: 400;
+    color: #019c8c;
+    padding: 0 5px 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input {
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+    width: 60%;
+    height: 35px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+input:focus {
+    font: 12px Lato;
+    font-weight: 100;
+    outline: none;
+    border: 3px solid #019c8c;
+}
+
+button {
+    font: 16px Lato;
+    color: white;
+    background-color: #019c8c;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #565656;
+}
+
+.form-link {
+    text-decoration: none;
+    color: #048e76;
+    font: 16px Lato;
+    font-weight: 900;
+    padding: 10px;
+}
+/** Login-Form **/
+
+.Special-title {
+    color: #316e66;
+    font: 30px/30px "Times New Roman", Times, serif;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 8px solid #048e76
+}
+/** Logo  and Header**/
+#header {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#logo {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 49px;
+    height: 100%;
+    width: 200px;
+}
+/** Contentst**/
+#contents {
+    display: inline-block;
+    width: 865px;
+    padding: 30px 47px;
+}
+#contents h1 {
+    color: #316e66;
+    font: 26px/30px "Times New Roman", Times, serif;
+    margin: 18px 0 20px;
+    text-transform: uppercase;
+}
+#contents div.body h1, #contents h2 {
+    color: #316e66;
+    font: 30px/30px "Times New Roman", Times, serif;
+    margin: 0 0 18px;
+}
+#contents h2 {
+    font-size: 22px;
+    margin: 0 0 30px;
+}
+#contents h2 a {
+    color: #2c9688;
+    text-decoration: none;
+}
+#contents p {
+    color: #5a4535;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 0 24px 2px;
+}
+#contents p a {
+    color: #5a4535;
+}
+#contents p a:hover, #news div.sidebar ul li a:hover {
+    color: #917157;
+}
+
+#contents div.box {
+    margin-bottom: 20px;
+    margin-left: 1px;
+    padding: 0 0 6px;
+}
+#contents div.box > div {
+    background-position: -1745px top;
+    padding: 6px 0 0;
+}
+#contents div.body {
+    background-position: -871px top;
+    background-repeat: repeat-y;
+    padding: 30px 40px 0;
+}
+/** Cars, Parts Tires **/
+#cars, #parts, #Tires {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#cars li, #parts li, #Tires li {
+    display: inline-block;
+    width: 784px;
+    border-top: 1px solid #b7b7b7;
+    padding: 30px 0;
+    position: relative;
+}
+#cars li:first-child, #parts li:first-child, #Tires li:first-child {
+    border-top: 0;
+}
+#cars li img {
+    float: left;
+    border: 1px solid #316e66;
+    margin-right: 15px;
+}
+#cars .rate1 {
+    color: #316e66;
+    display: inline-block;
+    font: 16px/35px "Times New Roman", Times, serif;
+    height: 35px;
+    width: 138px;
+    border: 1px solid #5a4535;
+    text-align: center;
+    float: right;
+    bottom: 30px;
+}
+#cars .rate2 {
+    color: #316e66;
+    display: inline-block;
+    font: 16px/35px "Times New Roman", Times, serif;
+    height: 35px;
+    width: 138px;
+    border: 1px solid #5a4535;
+    text-align: center;
+    float: left;
+    bottom: 30px;
+}
+#contents div.box {
+    margin-bottom: 20px;
+    margin-left: 1px;
+    padding: 0 0 6px;
+}
+#contents div.box > div {
+    background-position: -1745px top;
+    padding: 6px 0 0;
+}
+#contents div.body {
+    background-position: -871px top;
+    background-repeat: repeat-y;
+    padding: 30px 40px 0;
+}
+.text{
+    float: left;
+    border-right: 1px solid #b7b7b7;
+    margin-top: 20px;
+}
+
+
+/** Parts **/
+#parts li {
+    padding-bottom: 30px;
+}
+#parts li img {
+    float: right;
+    border: 1px solid #2c9688;
+    margin-left: 15px;
+}
+/** Contact **/
+
+.title{
+    font: 18px Oswald;
+    font-weight: 400;
+    color: #316e66;
+    padding: 0 5px 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contactUs{
+    background: #dadada;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+}
+.contactUs span{
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+    font: 20px/20px "Times New Roman";
+}
+.secondSpan{
+    color: black;
+    font: 20px/20px "Times New Roman", Times, serif;
+}
+
+/** MAIN **/
+.main {
+    float: left;
+    min-height: 100px;
+    width: 566px;
+}
+.main div.box {
+    background-position: left bottom;
+    margin-bottom: 12px;
+    padding: 0 0 6px;
+}
+.main div.box > div {
+    background-position: -1145px top;
+    padding: 6px 0 0;
+}
+.main div.box > div > div {
+    background-position: -572px top;
+    background-repeat: repeat-y;
+    padding: 17px;
+    background: white;
+}
+.main div.box h3 {
+    color: #316e66;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 1px dotted #9c8964;
+    margin: 0;
+    padding: 0 0 12px;
+    text-transform: uppercase;
+}
+.main div.box h4 {
+    font: 22px/24px "Times New Roman", Times, serif;
+    font-weight: normal;
+    margin: 6px 0 0;
+}
+.main div.box h4 a {
+    color: #5a4535;
+    text-decoration: none;
+}
+.main div.box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main div.box ul li {
+    border-bottom: 1px dotted #9c8964;
+}
+.main div.box ul li span {
+    color: #5a4535;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.main div.box ul li p {
+    line-height: 24px;
+    padding: 0 0 3px;
+}
+/** SIDEBAR **/
+#sidebar {
+    float: right;
+    height: auto;
+    width: 285px;
+}
+#sidebar div.section {
+    height: 144px;
+    margin-bottom: 12px;
+}
+#sidebar div.section:first-child {
+    padding: 3px 0 0;
+}
+#sidebar div.section > a:hover {
+    filter:alpha(opacity=60);
+    opacity: 0.6;
+}
+/** testimonials **/
+#contents div#testimonials h3 {
+    color: #2c9688;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+#testimonials p {
+    display: inline-block;
+    line-height: 24px;
+    padding-bottom: 3px;
+}
+#testimonials p span {
+    float: right;
+}
+#testimonials p span a {
+    color: #2c9688;
+    text-decoration: none;
+}
+#testimonials p span a:hover {
+    color: #2c9688;
+}
+/***Price & Info - Bar***/
+.price-bar{
+    color: #316e66;
+    display: inline-block;
+    font: 16px/35px "Times New Roman", Times, serif;
+    height: 35px;
+    width: 138px;
+    border: 1px solid #5a4535;
+    text-align: center;
+    float: left;
+    bottom: 30px;
+    margin-right: 40px;
+}
+.info-bar{
+    color: #316e66;
+    display: inline-block;
+    font: 16px/35px "Times New Roman", Times, serif;
+    height: 35px;
+    width: 138px;
+    border: 1px solid #5a4535;
+    text-align: center;
+    /**float: left;**/
+    bottom: 30px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
