@@ -228,11 +228,13 @@ function listPosts() {
         success: loadPostsSuccess,
         error: handleAjaxError
     });
+
     function loadPostsSuccess(posts) {
         showInfo('Posts loaded.');
         if(posts.length == 0){
             $('#posts').text('No posts in the forum.');
         }else{
+            posts.reverse();
             let postsTable = $("<div id='post-style'>");
             for (let post of posts){
                 postsTable.append($('<blockquote>')
